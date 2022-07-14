@@ -1,21 +1,15 @@
 plugins {
-//    kotlin("jvm") version "1.6.21"
-//    kotlin("plugin.jpa") version "1.4.32"
-//    kotlin("plugin.spring") version "1.4.32"
+    id("org.springframework.boot")
 
-//    id("org.springframework.boot") version "2.4.4"
-    id("kotlin")
+    kotlin("jvm")
+    kotlin("plugin.spring")
 }
 
 group = "com.gamebooks"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-//    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 //    implementation("org.springframework.boot:spring-boot-starter-mustache")
 //    implementation("org.springframework.boot:spring-boot-starter-web")
 //    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
